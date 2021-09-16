@@ -1,0 +1,86 @@
+Feladatok
+
+1.)
+Milyen eredményt kapsz, ha lefuttatod a kódrészletet?
+<script>
+    let a = 7;
+    if (a < 5) {
+        console.log(a / 2);
+    } else {
+        console.log(a * 2);
+    }   
+</script>
+Eredmény: 14, mert az else ág fut le.
+
+Mit kellene megváltoztatnod ahhoz, hogy a parancssorra kiírt eredmény 1 legyen?
+<script>
+    a = 2;
+</script>
+
+2.)
+Hozz létre egy ciklust, ami kiírja a számokat 0-tól 9-ig.
+<script>
+    let num = '';
+for (let i = 0; i < 10; i++) {
+  num = num + i;
+}
+console.log(num);
+</script>
+
+Módosítsd az előző ciklust, hogy 1-től 10-ig írja ki a számokat.
+<script>
+        let num = '';
+for (let i = 1; i < 11; i++) {
+  num = num + i;
+}
+console.log(num);
+</script>
+
+Írd ki a 0 és 20 közötti páros számokat (zárt intervallum).
+<script>
+   let num = '';
+for (let i = 0; i < 21; i = i+2) {
+  num = num + i;
+}
+console.log(num);
+</script>
+
+3.)
+Használd az imént megismert for ciklust (for loop) és hozz létre egy függvényt, ami kiírja az első N számot!
+
+<script>
+let num = '';
+let printNumbersTill = (n) => {
+  for (let i = 1; i<=n; i++) {
+    num=num+i;
+  };
+  return num;
+};
+console.log(printNumbersTill(20));
+</script>
+
+4.)
+Hozz létre egy függvényt, ami egy nevet kap paraméterként, majd visszatér egy személyes üdvözléssel!
+<script>
+  getGreetingTo = function (name) {
+  console.log(`Hello ${name}!`)
+}
+console.log(getGreetingTo('Mark'));
+</script>
+
+5.)
+<script>
+  let printValues = (array) => {
+  for (let i = 0; i < array.length; i++) {
+    console.log(array[i]);
+  }
+};
+console.log(printValues([0, 3, 6, 7, 9]));
+</script>
+
+<script>
+  let printValues = [0, 3, 6, 7, 9];
+printValues.forEach((number) => {
+  console.log(number);
+});
+</script>

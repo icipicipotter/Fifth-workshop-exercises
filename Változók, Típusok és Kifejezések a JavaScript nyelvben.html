@@ -1,0 +1,63 @@
+
+Feladatok
+
+1.)
+Számold ki az életkorod a parancssor segítségével és tárold el egy age nevű változóban
+Hány évig tartott a Második világháború? Tárold el az eredményt egy ww2 nevű változóban
+Mennyibe kerül 76 Tesla részvény? Tárold el egy tesla nevű változóban
+Hány másodpercig tart egy nap? Tárold el egy secondsOfDay nevű változóban
+A világ lakosságának hány százaléka magyar állampolgár? Tárold el egy hungarians nevű változóban
+Mennyivel nagyobb Kína területe, mint Csehországé? Tárold el egy bigger nevű változóban
+Ha egy Discord csatornába csak 7 ember fér és összesen 654-en vannak a szerveren, hányan lesznek a legkisebb csatornában? Tárold el egy participants nevű változóban-->
+<script>
+    let age = 41;
+    let ww2 = 4;
+    let tesla = 76*727;
+    let secondsOfDay = 24*60*60;
+    let hungarians = 0.123;
+    let bigger = 9597000-78871;
+    let participants = 654%7;
+</script>
+
+2.)
+let result = !true; - // az eredmény hamis (false)
+let result2 = !false - // az eredmény igaz (true)
+Mi lesz a !!true művelet eredménye? Miért? - //az eredmény igaz (true), mert tagadjuk az igaz tagadását.
+
+3.)
+Gondold át, mi a trueOrFalse változó eredménye a következő példákban!
+
+let trueOrFalse = 5 === 5; - (true)
+trueOrFalse = 100 < 50; - (false)
+trueOrFalse = 'hello' !== 'world'; - (true)
+trueOrFalse = 1 >= 2; (false)
+trueOrFalse = 'blue'.length === 'green'.length; - (false)
+trueOrFalse = 3 < 4 && (5 > 6 || 7 < 8); - - (true)
+
+4.)
+Hozz létre egy tömböt, amiben különböző neveket tárolsz és mentsd el egy names nevű változóban
+Nézd meg, a harmadik név hosszabb-e, mint 5 karakter (.length)
+Adj 1 vagy több új nevet a tömbhöz (.push)
+Cseréld le az első nevet a saját nevedre
+Nézd meg, több, mint 4 elem van-e a tömbben (.length)
+<script>
+    let names = ["Domi", "Lea", "Viktor", "Dius", "Lili"];
+    console.log(names[2].length);
+    names.push("Feri");
+    names[0] = "Ági";
+    console.log(names.lenght);
+</script>
+
+5.)
+Hozz létre egy objektumot, aminek van egy colors nevű adatmezője (doboza)
+a colors mező (változó) tartalma legyen egy tömb, ami színeket tartalmaz
+Adj egy új mezőt az objektumhoz, hasManyColors néven
+az értéke legyen true, ha több, mint 3 színt tartalmaz a colors, különben pedig legyen false
+<script>
+    let colors = {
+    colors: ["piros", "kék", "zöld", "sárga", "fekete", "fehér"],
+    hasManyColors: function() {return colors.colors.length > 3}
+};
+console.log(colors.hasManyColors())
+</script>
+
