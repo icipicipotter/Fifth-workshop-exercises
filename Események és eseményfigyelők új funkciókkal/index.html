@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Események és eseményfigyelők</h1>
+    <button class="button" id="gomb1">GOMB1</button>
+    <button class="button" id="gomb2">GOMB2</button>
+    <button class="button" id="gomb3">GOMB3</button>
+    
+    <h1>Adj új funkciókat az eseményfigyelőidhez</h1>
+    <button id="gomb4">UTOLSÓ GOMB</button>
+    <input placeholder="blue" onchange="setColor(this.value)">
+    <br/><br/>
+    <button id="gomb5">UTOLSÓ GOMB szorgalmi</button>
+    <input id="color" placeholder="blue" onchange="setColor1(this.value)">
+    <style>
+        #gomb5, #gomb4 {
+            background-color: blue;
+        }
+    </style>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src=".\scripts.js"></script>
+</html>

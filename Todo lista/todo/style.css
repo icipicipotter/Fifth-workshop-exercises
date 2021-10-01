@@ -1,0 +1,81 @@
+h1 {
+  padding: 30px 40px;
+  color: darkslategray;
+  font-size: 80px;
+  font-weight: normal;
+  text-align: center;
+  font-family: 'Red Hat Display', sans-serif;
+  margin: auto;
+}
+
+.header {
+  height: 35px;
+  margin: 10px 30%;
+}
+
+input {
+  box-sizing: border-box;
+  margin: 0;
+  width: 80%;
+  height: 40px;
+  border: 2px solid grey;
+  padding: 15px 32px;
+  float: left;
+  font-size: 16px;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+}
+
+.addBtn {
+  border: 2px solid grey;
+  border-left: 0px;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+  width: 20%;
+  height: 40px;
+  background-color: palevioletred;
+  color: white;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  box-sizing: border-box;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  height: 20px;
+  margin: 0 30%;
+  position: relative;
+  padding: 5px 50px;
+  border-bottom: 1px solid rgb(170, 170, 170);
+  font-size: 18px;
+  display: block;
+}
+
+.checkbtn, .deletebtn {
+  all: unset;
+}
+
+.btngroup {
+  border: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}

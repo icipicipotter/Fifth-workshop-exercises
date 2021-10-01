@@ -1,0 +1,26 @@
+h1 {
+    text-transform: uppercase;
+    font-size: 80px;
+    margin-left: 55px;
+}
+
+#addbutton, input {
+    border: 2px solid grey;
+    padding: 15px 32px;
+    font-size: 16px;
+    color: darkslategray;
+}
+
+#addbutton{
+    background-color:palevioletred;
+}
+
+ul, h1, #addbutton {
+    color: darkslategray;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: lighter;
+}
+
+li #ok #delete {
+    display: block;
+}
